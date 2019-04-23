@@ -1,0 +1,20 @@
+@import './reset.scss';
+@import './mixin.scss';
+
+.mainComponent{
+    @include box(100vw,400px,2px black solid);
+    padding: 10px;
+    h1,p{
+        text-align: center;
+    }
+    p{
+        padding: 10px;
+    }
+
+} 
+.bio{
+    p{
+        text-align: center;
+        padding: 10px
+    }
+}
