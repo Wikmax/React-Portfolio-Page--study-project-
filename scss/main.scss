@@ -2,19 +2,24 @@
 @import './mixin.scss';
 
 .mainComponent{
-    @include box(100vw,400px,2px black solid);
-    padding: 10px;
-    h1,p{
+    h1,h2,p{
         text-align: center;
-    }
-    p{
         padding: 10px;
     }
+    .buttonReadMore{
+        // Future code??
+    }
+}
 
-} 
-.bio{
-    p{
-        text-align: center;
-        padding: 10px
+.projects{
+    @include box(100%,100%,2px black solid);
+    display: inline-block;
+    width:300px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    img{
+        width:200px;
+        height: 120px;
     }
 }
