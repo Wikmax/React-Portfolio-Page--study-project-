@@ -39,16 +39,17 @@ const config = {
                 ]
             },
             {
-                test: /\.svg$/,
+                test: /\.(woff2?|ttf|otf|eot|svg|jpg)$/,
                 use: 'file-loader'
             },
             {
-                test: /\.png$/,
+                test: /\.png|jpg$/,
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
-                        mimetype: 'image/png'
+                        mimetype: 'image/png',
+                        mimetype: 'image/jpg'
                         }
                     }
                 ]

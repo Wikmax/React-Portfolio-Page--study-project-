@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ARRAY_OF_PROJECTS from './Array_of_projects.jsx';
+import ARRAY_OF_PROJECTS from './ProjectsArray.jsx';
 
 class SingleProject extends Component {
     render(){
@@ -9,7 +9,7 @@ class SingleProject extends Component {
                 <h3>{title}</h3>
                 <img src={image} alt="Project image"/>
                 <p>{description}</p>
-                <a href={link} target="_blank">{link}</a>
+                <a href={link} target="_blank">Link to this project</a>
             </div>
 
         )

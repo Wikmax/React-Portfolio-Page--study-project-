@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import Projects from './Projects.jsx';
+import SocialProfiles from './SocialProfiles.jsx';
+import profilePicture from '../assets/profile.png';
 
 class Main extends Component{
     state = {displayBio:false};
@@ -13,12 +15,13 @@ class Main extends Component{
         return(
             <div className="mainComponent" >
             <header>
+                <img src={profilePicture} alt="Profile image"/>
                 <h1>Hello!</h1>
                 <p>My name is Wiktor.I'm still learning to become a software engineer.</p>
                 <p>I'm always looking forward to learn new things about programming.</p>
             </header>
 
-            <section>
+            <section className="displayBio">
                 {
                     this.state.displayBio ? (
                         <div className="bio">
@@ -35,10 +38,14 @@ class Main extends Component{
                 }
             </section>
                 <hr/>
-            <section>
+            <section className="projectSection">
                     <Projects />
             </section>
-                
+            
+            <footer>
+                <hr/>
+                <SocialProfiles/>
+            </footer>
             </div >
         
         )
