@@ -3,6 +3,7 @@ import Projects from './Projects.jsx';
 import SocialProfiles from './SocialProfiles.jsx';
 import profilePicture from '../assets/profile.png';
 import Title from './Title.jsx';
+import Header from './Header.jsx';
 
 class Main extends Component{
     state = {displayBio:false};
@@ -16,6 +17,7 @@ class Main extends Component{
         return(
             <div className="mainComponent" >
             <header>
+                <Header/>
                 <img src={profilePicture} alt="Profile image"/>
                 <h1>Hello!</h1>
                 <p>My name is Wiktor.</p>

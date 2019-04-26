@@ -5,7 +5,8 @@ const config = {
     entry: './app/app.jsx',
     output: {
         path: path.resolve(__dirname, '.build'),
-        filename: 'index.js'
+        filename: 'index.js',
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -63,7 +64,8 @@ const config = {
         ]
     },
     devServer: {
-        contentBase: './build'
+        contentBase: './build',
+        historyApiFallback :true
     }
 }
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ARRAY_OF_PROJECTS from './ProjectsArray.jsx';
+import Header from './Header.jsx';
 
 class SingleProject extends Component {
     render(){
@@ -21,6 +22,7 @@ class Projects extends Component{
     render(){
         return(
             <div>
+                <Header/>
                 <h2>Highlighted Projects</h2>
                 <div >
                    {
